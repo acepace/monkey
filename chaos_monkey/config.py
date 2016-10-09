@@ -140,7 +140,7 @@ class Configuration(object):
 
     scanner_class = TcpScanner
     finger_classes = [SMBFinger, SSHFinger, PingScanner, HTTPFinger]
-    exploiter_classes = [SmbExploiter, WmiExploiter, RdpExploiter, Ms08_067_Exploiter,  # Windows exploits
+    exploiter_classes = [SmbExploiter, WmiExploiter, Ms08_067_Exploiter,  # Windows exploits
                          SSHExploiter, ShellShockExploiter  # Linux
                          ]
 
@@ -166,7 +166,7 @@ class Configuration(object):
     retry_failed_explotation = True
 
     # addresses of internet servers to ping and check if the monkey has internet acccess.
-    internet_services = ["monkey.guardicore.com", "www.google.com"]
+    internet_services = ["www.google.com"]
 
     ###########################
     # scanners config
