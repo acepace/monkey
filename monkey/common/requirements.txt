@@ -1,0 +1,5 @@
+cffi
+ipaddress
+netifaces
+pycryptodome
+requests

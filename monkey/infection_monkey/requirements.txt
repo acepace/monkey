@@ -1,16 +1,12 @@
+-r ../common/requirements.txt
+WinSys-3.x
+ecdsa
+git+https://github.com/guardicore/pyinstaller
 impacket
-pycryptodome
-cffi
-requests
 odict
 paramiko
 psutil
-git+https://github.com/guardicore/pyinstaller
-ecdsa
-netifaces
-ipaddress
-wmi
-pywin32 ; sys_platform == 'win32'
-pymssql<3.0
 pyftpdlib
-WinSys-3.x
+pymssql
+pywin32 ; sys_platform == 'win32'
+wmi
