@@ -62,8 +62,25 @@ docs/_build/
 
 # PyBuilder
 target/
-db
 bin
-/monkey_island/cc/server.key
-/monkey_island/cc/server.crt
-/monkey_island/cc/server.csr
+/monkey/monkey_island/db
+/monkey/monkey_island/cc/server.key
+/monkey/monkey_island/cc/server.crt
+/monkey/monkey_island/cc/server.csr
+/monkey/monkey_island/cc/ui/node_modules/
+
+# User files
+/monkey/monkey_island/cc/userUploads
+
+# MonkeyZoo
+# Network status files
+MonkeyZoo/*
+# Except
+!MonkeyZoo/main.tf
+!MonkeyZoo/variables.tf
+!MonkeyZoo/README.MD
+!MonkeyZoo/config.tf
+!MonkeyZoo/MonkeyZooDocs.pdf
+
+# vim swap files
+*.swp
