@@ -39,6 +39,7 @@ class ElasticFinger(HostFinger):
                     host.services[ES_SERVICE]['cluster_name'] = data['cluster_name']
                     host.services[ES_SERVICE]['name'] = data['name']
                     host.services[ES_SERVICE]['version'] = data['version']['number']
+                    host.services[ES_SERVICE]['tls'] = 'https' in url
                     return True
             except Timeout:
                 pass
