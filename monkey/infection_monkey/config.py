@@ -171,7 +171,8 @@ class Configuration(object):
     # TCP Scanner
     HTTP_PORTS = [80, 8080, 443,
                   8008,  # HTTP alternate
-                  7001  # Oracle Weblogic default server port
+                  7001,  # Oracle Weblogic default server port
+                  9200,  # ElasticSearch HTTP and HTTPS port (wth)
                   ]
     tcp_target_ports = [22,
                         2222,
@@ -182,8 +183,8 @@ class Configuration(object):
                         8080,
                         443,
                         8008,
-                        3306,
-                        9200]
+                        3306
+                        ]
     tcp_target_ports.extend(HTTP_PORTS)
     tcp_scan_timeout = 3000  # 3000 Milliseconds
     tcp_scan_interval = 0  # in milliseconds
